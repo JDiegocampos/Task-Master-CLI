@@ -1,14 +1,26 @@
 {
-    "3": {
-        "description": "Ir a la U",
-        "status": "todo",
-        "createdAt": "30/10/2024, 16:26:52",
-        "updatedAt": "30/10/2024, 16:33:48"
-    },
     "4": {
         "description": "Ir a casa",
-        "status": "todo",
+        "status": "in-progress",
         "createdAt": "30/10/2024, 16:27:28",
-        "updatedAt": "30/10/2024, 16:27:28"
+        "updatedAt": "31/10/2024, 11:21:20"
+    },
+    "5": {
+        "description": "Viajar",
+        "status": "in-progress",
+        "createdAt": "31/10/2024, 11:20:51",
+        "updatedAt": "31/10/2024, 13:35:41"
+    },
+    "6": {
+        "description": "Hacer la tarea",
+        "status": "done",
+        "createdAt": "31/10/2024, 11:55:02",
+        "updatedAt": "31/10/2024, 13:36:07"
+    },
+    "7": {
+        "description": "Hacer taller 2 de calculo integral",
+        "status": "done",
+        "createdAt": "31/10/2024, 12:21:14",
+        "updatedAt": "31/10/2024, 13:36:18"
     }
 }
