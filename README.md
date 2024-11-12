@@ -4,7 +4,7 @@
     <img src="IconTaskMaster.ico" alt="Preview" width="300" height="300">
 </p>
 
-This is a simple command-line interface (CLI) to track and manage your tasks. This app allows you to add, update, delete and list tasks, as well as mark them as in-progress or done.
+This is a simple command-line interface (CLI) to track and manage your tasks. This app allows you to add, update, delete and list tasks, as well as mark them as todo, in-progress or done.
 
 ## Features
 
