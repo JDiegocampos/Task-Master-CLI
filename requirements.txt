@@ -1,0 +1,4 @@
+#This file is used to list the dependencies needed by the project.
+#Each line in the file represents a package that 'pip' will install.
+
+rich #last version

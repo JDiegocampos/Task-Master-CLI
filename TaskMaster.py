@@ -18,26 +18,16 @@ def main():
     parser.add_argument('-m', '--mark', nargs=2, help='Mark a specific task by typing its ID and status as "todo", "in-progress" or "done"')
 
     args = parser.parse_args()
-
-    try:
-        if args.add:
-            add_task(data, args.add)
-        elif args.delete:
-            delete_task(data, str(args.delete))
-        elif args.list:
-            list_task(data, status=args.list)
-        elif args.update:
-            if len(args.update) == 2:
-                update_task(data, str(args.update[0]), args.update[1])
-            else:
-                console.print("Please give a task ID and a new description")
-        elif args.mark:
-            if len(args.mark) == 2:
-                mark_task(data, str(args.mark[0]), args.mark[1])
-            else:
-                console.print("Please give a task ID and a status")
-    except Exception as e:
-        console.print(f"An error occurred: {e}")
+    if args.add:
+        add_task(data, args.add)
+    elif args.delete:
+        delete_task(data, str(args.delete))
+    elif args.list:
+        list_task(data, status=args.list)
+    elif args.update:
+        update_task(data, str(args.update[0]), args.update[1])
+    elif args.mark:
+        mark_task(data, str(args.mark[0]), args.mark[1])
 
 def get_data(file):
     try:
@@ -67,10 +57,10 @@ def add_task(data, description):
 
 def delete_task(data, id):
     if id in data:
-        list_task(data, id=id)
+        list_task(data, id=id) #show the task to be deleted
         confirmation = input(f"are you sure to delete the task with ID {id}? (y/n): ")
         if confirmation.lower() == 'y':
-            del data[id]
+            del data[id] #delete a task based on its ID
             save_data(data, dataset)
             print(f"Task with ID {id} was deleted")
     else:
@@ -80,7 +70,7 @@ def update_task(data, id, description):
     if id in data:
         data[id]["description"] = description
         data[id]["updatedAt"] = datetime.now().strftime("%d/%m/%Y, %H:%M:%S")
-        list_task(data, id=id)
+        list_task(data, id=id) #show the updated task
         save_data(data, dataset)
     else:
         print(f"Task with ID {id} not found.")
