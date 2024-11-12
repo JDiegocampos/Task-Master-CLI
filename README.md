@@ -28,11 +28,11 @@ The data is stored in a dictionary where the keys are the task IDs and the value
         "createdAt": "12/11/2024, 09:32:15",
         "updatedAt": "12/11/2024, 09:32:15"
     },
-    task_ID: {
-        "description": task description,
-        "status": todo, in-progress or done ('todo' by default),
-        "createdAt": date and time where the task was created,
-        "updatedAt": date and time where the task was updated
+    "task_ID": {
+        "description": "task description",
+        "status": "todo, in-progress or done ('todo' by default)",
+        "createdAt": "date and time where the task was created",
+        "updatedAt": "date and time where the task was updated"
     }
 }
 ```
