@@ -124,11 +124,12 @@ There are different ways to install this project:
     ```
 
 - **Using the TaskMaster.exe file**: You can download the 'TaskMaster.exe' file from the 'dist' folder of the repository and run it in your Terminal by navigating to the directory where the 'TaskMaster.exe' file is located.
-Once you're in the directory, you can use the 'TaskMaster.exe' file by typing the project name followed by the command you want to run. For example:
-```bash
-TaskMaster -a "Make homework"
-```
-This is the easiest way to use the proyect.
+Once you're in the directory, you can use the 'TaskMaster.exe' file by typing the project name followed by the command you want to run.
+    - For example:
+    ```bash
+    TaskMaster -a "Make homework"
+    ```
+    This is the easiest way to use the proyect.
 
 ## More information about the project
 
