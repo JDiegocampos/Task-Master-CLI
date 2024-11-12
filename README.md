@@ -41,63 +41,63 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
 ## Usage
 
 - **Add a task**: You can use the '-a' or '--add' command followed by the task description to add a new task.
-    -Example:
-        ```bash
-        python TaskMaster.py -a "Make homework"
-                                    List of all tasks
-        ╭────┬───────────────┬────────┬──────────────────────┬──────────────────────╮
-        │ ID │ Description   │ Status │ Created At           │ Updated At           │
-        │ 1  │ Make homework │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 09:32:15 │
-        ╰────┴───────────────┴────────┴──────────────────────┴──────────────────────╯
-        ```
-- **Delete a task**: You can use the '-d' or '--delete' command followed by the task ID to delete a task. The programm will ask you to confirm the deletion.
-    -Example:
-        ```bash
-        python TaskMaster.py -d 4                       
-                                        List of all tasks
-        ╭────┬────────────────────────┬────────┬──────────────────────┬──────────────────────╮
-        │ ID │ Description            │ Status │ Created At           │ Updated At           │
-        ├────┼────────────────────────┼────────┼──────────────────────┼──────────────────────┤
-        │ 4  │ Push changes to GitHub │ done   │ 12/11/2024, 09:37:07 │ 12/11/2024, 09:37:57 │
-        ╰────┴────────────────────────┴────────┴──────────────────────┴──────────────────────╯
-        are you sure to delete the task with ID 4? (y/n): y
-        Task with ID 4 was deleted
-        ```
-- **Update a task**: You can use the '-u' or '--update' command followed by the task ID and the new description to update the task.
-    -Example:
-        ```bash
-        python TaskMaster.py -u 1 "Make math homework"
+    - Example:
+    ```bash
+    python TaskMaster.py -a "Make homework"
                                 List of all tasks
-        ╭────┬────────────────────┬────────┬──────────────────────┬──────────────────────╮
-        │ ID │ Description        │ Status │ Created At           │ Updated At           │
-        ├────┼────────────────────┼────────┼──────────────────────┼──────────────────────┤
-        │ 1  │ Make math homework │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 13:11:10 │
-        ╰────┴────────────────────┴────────┴──────────────────────┴──────────────────────╯
-        ```
-- **List tasks**: You can use the '-ls' or '--list' command to list all tasks. You can also indicate the task status 'all', 'todo', 'in-progress' or 'done' ('all' by default) to filter data.
-    -Example:
-        ```bash
-        python TaskMaster.py -ls
+    ╭────┬───────────────┬────────┬──────────────────────┬──────────────────────╮
+    │ ID │ Description   │ Status │ Created At           │ Updated At           │
+    │ 1  │ Make homework │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 09:32:15 │
+    ╰────┴───────────────┴────────┴──────────────────────┴──────────────────────╯
+    ```
+- **Delete a task**: You can use the '-d' or '--delete' command followed by the task ID to delete a task. The programm will ask you to confirm the deletion.
+    - Example:
+    ```bash
+    python TaskMaster.py -d 4                       
                                     List of all tasks
-        ╭────┬───────────────────────────┬────────┬──────────────────────┬──────────────────────╮
-        │ ID │ Description               │ Status │ Created At           │ Updated At           │
-        ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
-        │ 1  │ Make math homework        │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 13:11:10 │
-        ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
-        │ 2  │ Go to the U               │ todo   │ 12/11/2024, 09:33:09 │ 12/11/2024, 09:33:09 │
-        ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
-        │ 3  │ Finish TaskMaster project │ done   │ 12/11/2024, 09:33:36 │ 12/11/2024, 09:37:40 │
-        ╰────┴───────────────────────────┴────────┴──────────────────────┴──────────────────────╯
-        python TaskMaster.py -ls done
-                                   List of done tasks
-        ╭────┬───────────────────────────┬────────┬──────────────────────┬──────────────────────╮
-        │ ID │ Description               │ Status │ Created At           │ Updated At           │
-        ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
-        │ 3  │ Finish TaskMaster project │ done   │ 12/11/2024, 09:33:36 │ 12/11/2024, 09:37:40 │
-        ╰────┴───────────────────────────┴────────┴──────────────────────┴──────────────────────╯
-        ```
+    ╭────┬────────────────────────┬────────┬──────────────────────┬──────────────────────╮
+    │ ID │ Description            │ Status │ Created At           │ Updated At           │
+    ├────┼────────────────────────┼────────┼──────────────────────┼──────────────────────┤
+    │ 4  │ Push changes to GitHub │ done   │ 12/11/2024, 09:37:07 │ 12/11/2024, 09:37:57 │
+    ╰────┴────────────────────────┴────────┴──────────────────────┴──────────────────────╯
+    are you sure to delete the task with ID 4? (y/n): y
+    Task with ID 4 was deleted
+    ```
+- **Update a task**: You can use the '-u' or '--update' command followed by the task ID and the new description to update the task.
+    - Example:
+    ```bash
+    python TaskMaster.py -u 1 "Make math homework"
+                            List of all tasks
+    ╭────┬────────────────────┬────────┬──────────────────────┬──────────────────────╮
+    │ ID │ Description        │ Status │ Created At           │ Updated At           │
+    ├────┼────────────────────┼────────┼──────────────────────┼──────────────────────┤
+    │ 1  │ Make math homework │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 13:11:10 │
+    ╰────┴────────────────────┴────────┴──────────────────────┴──────────────────────╯
+    ```
+- **List tasks**: You can use the '-ls' or '--list' command to list all tasks. You can also indicate the task status 'all', 'todo', 'in-progress' or 'done' ('all' by default) to filter data.
+    - Example:
+    ```bash
+    python TaskMaster.py -ls
+                                List of all tasks
+    ╭────┬───────────────────────────┬────────┬──────────────────────┬──────────────────────╮
+    │ ID │ Description               │ Status │ Created At           │ Updated At           │
+    ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
+    │ 1  │ Make math homework        │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 13:11:10 │
+    ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
+    │ 2  │ Go to the U               │ todo   │ 12/11/2024, 09:33:09 │ 12/11/2024, 09:33:09 │
+    ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
+    │ 3  │ Finish TaskMaster project │ done   │ 12/11/2024, 09:33:36 │ 12/11/2024, 09:37:40 │
+    ╰────┴───────────────────────────┴────────┴──────────────────────┴──────────────────────╯
+    python TaskMaster.py -ls done
+                               List of done tasks
+    ╭────┬───────────────────────────┬────────┬──────────────────────┬──────────────────────╮
+    │ ID │ Description               │ Status │ Created At           │ Updated At           │
+    ├────┼───────────────────────────┼────────┼──────────────────────┼──────────────────────┤
+    │ 3  │ Finish TaskMaster project │ done   │ 12/11/2024, 09:33:36 │ 12/11/2024, 09:37:40 │
+    ╰────┴───────────────────────────┴────────┴──────────────────────┴──────────────────────╯
+    ```
 - **Mark a task**: You can use the '-m' or '--mark' command followed by the task ID and the new status to mark a task.
-    -Example:
+    - Example:
     ```bash
     python TaskMaster.py -m 1 in-progress
                                    List of all tasks
@@ -129,3 +129,7 @@ Once you're in the directory, you can use the 'TaskMaster.exe' file by typing th
 TaskMaster -a "Make homework"
 ```
 This is the easiest way to use the proyect.
+
+## More information about the project
+
+You can get more details about this project assignment by visiting: [Roadmap Task Tracker](https://roadmap.sh/projects/task-tracker)
