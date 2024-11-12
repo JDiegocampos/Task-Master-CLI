@@ -108,7 +108,7 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
     ╰────┴────────────────────┴─────────────┴──────────────────────┴──────────────────────╯
     ```
 
-## Instalation
+## Installation
 
 There are different ways to install this project:
 
