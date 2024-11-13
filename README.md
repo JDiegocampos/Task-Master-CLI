@@ -40,7 +40,7 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
 
 ## Usage
 
-- **Add a task**: You can use the '-a' or '--add' command followed by the task description to add a new task.
+- **Add a task**: You can use the `-a` or `--add` command followed by the task description to add a new task.
     - Example:
     ```bash
     python TaskMaster.py -a "Make homework"
@@ -50,7 +50,7 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
     │ 1  │ Make homework │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 09:32:15 │
     ╰────┴───────────────┴────────┴──────────────────────┴──────────────────────╯
     ```
-- **Delete a task**: You can use the '-d' or '--delete' command followed by the task ID to delete a task. The programm will ask you to confirm the deletion.
+- **Delete a task**: You can use the `-d` or `--delete` command followed by the task ID to delete a task. The programm will ask you to confirm the deletion.
     - Example:
     ```bash
     python TaskMaster.py -d 4                       
@@ -63,7 +63,7 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
     are you sure to delete the task with ID 4? (y/n): y
     Task with ID 4 was deleted
     ```
-- **Update a task**: You can use the '-u' or '--update' command followed by the task ID and the new description to update the task.
+- **Update a task**: You can use the `-u` or `--update` command followed by the task ID and the new description to update the task.
     - Example:
     ```bash
     python TaskMaster.py -u 1 "Make math homework"
@@ -74,7 +74,7 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
     │ 1  │ Make math homework │ todo   │ 12/11/2024, 09:32:15 │ 12/11/2024, 13:11:10 │
     ╰────┴────────────────────┴────────┴──────────────────────┴──────────────────────╯
     ```
-- **List tasks**: You can use the '-ls' or '--list' command to list all tasks. You can also indicate the task status 'all', 'todo', 'in-progress' or 'done' ('all' by default) to filter data.
+- **List tasks**: You can use the `-ls` or `--list` command to list all tasks. You can also indicate the task status 'all', 'todo', 'in-progress' or 'done' ('all' by default) to filter data.
     - Example:
     ```bash
     python TaskMaster.py -ls
@@ -96,7 +96,7 @@ All this data is stored in a file called `TaskMaster.json` in the same directory
     │ 3  │ Finish TaskMaster project │ done   │ 12/11/2024, 09:33:36 │ 12/11/2024, 09:37:40 │
     ╰────┴───────────────────────────┴────────┴──────────────────────┴──────────────────────╯
     ```
-- **Mark a task**: You can use the '-m' or '--mark' command followed by the task ID and the new status to mark a task.
+- **Mark a task**: You can use the `-m` or `--mark` command followed by the task ID and the new status to mark a task.
     - Example:
     ```bash
     python TaskMaster.py -m 1 in-progress
@@ -116,15 +116,18 @@ There are different ways to install this project:
     ```bash
     git clone https://github.com/JDiegocampos/Task-Master-CLI.git
     ```
-    **You need to install the 'rich' library for the code to work properly**
+    **You need to install the `rich` library for the code to work properly, you can do it using the following command:**
+      ```bash
+      pip install rich
+      ```
 
 - **Installing via pip**: You can install the project using pip by running the following command on your Terminal:
     ```bash
     pip install git+https://github.com/JDiegocampos/Task-Master-CLI.git
     ```
 
-- **Using the TaskMaster.exe file**: You can download the 'TaskMaster.exe' file from the 'dist' folder of the repository and run it in your Terminal by navigating to the directory where the 'TaskMaster.exe' file is located.
-Once you're in the directory, you can use the 'TaskMaster.exe' file by typing the project name followed by the command you want to run.
+- **Using the TaskMaster.exe file**: You can download the `TaskMaster.exe` file from the `dist` folder of the repository and run it in your Terminal by navigating to the directory where the `TaskMaster.exe` file is located.
+Once you're in the directory, you can use the `TaskMaster.exe` file by typing the project name `"TaskMaster"` followed by the command you want to run.
     - For example:
     ```bash
     TaskMaster -a "Make homework"
