@@ -117,9 +117,9 @@ There are different ways to install this project:
     git clone https://github.com/JDiegocampos/Task-Master-CLI.git
     ```
     **You need to install the `rich` library for the code to work properly, you can do it using the following command:**
-      ```bash
-      pip install rich
-      ```
+  ```bash
+  pip install rich
+  ```
 - **Installing via pip**: You can install the project using pip by running the following command on your Terminal:
     ```bash
     pip install git+https://github.com/JDiegocampos/Task-Master-CLI.git
